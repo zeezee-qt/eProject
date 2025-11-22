@@ -1,0 +1,170 @@
+.hero-section {
+    background: linear-gradient(rgba(182, 214, 255, 0.8), rgba(105, 145, 255, 0.8)),
+        url('../images/Double\ Cheese\ Burger.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+    /* Add vertical padding for better spacing */
+}
+
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Ensure full width within the grid */
+    display: flex;
+    flex-direction: column;
+}
+
+.item-image {
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-details {
+    padding: 20px;
+    flex-grow: 1;
+    /* Allow details to fill remaining space */
+}
+
+.container {
+    max-width: 1200px;
+    /* Limit container width for better control */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    /* Fixed width per card, auto-fit for responsive wrapping */
+    justify-content: center;
+    /* Centers the cards horizontally in the row */
+    gap: 25px;
+    padding: 20px 0;
+    /* Optional: Adds vertical spacing */
+}
+
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Ensures card fills its grid slot */
+    max-width: 300px;
+    /* Caps width to prevent stretching */
+    display: flex;
+    flex-direction: column;
+}
+
+.item-image {
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-details {
+    padding: 20px;
+    flex-grow: 1;
+    /* Fills remaining space for consistent height */
+}
+
+.container {
+    max-width: 1200px;
+    /* Keeps container reasonable on wide screens */
+    margin: 0 auto;
+    /* Ensures container is centered */
+    padding-left: 15px;
+    /* Matches Bootstrap's default for consistency */
+    padding-right: 15px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* .item-image {
+            height: 180px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .item-details {
+            padding: 20px;
+        } */
+.category-title {
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    margin: 20px auto;
+    transition: background 0.3s ease;
+}
+
+.category-title:hover {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.item-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.item-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ff6b6b;
+}
+
+.price-currency {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-header h1 {
+        font-size: 2rem;
+    }
+}

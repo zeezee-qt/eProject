@@ -1,0 +1,283 @@
+ html {
+   scroll-behavior: smooth;
+ }
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+ .meow-section {
+   height: 80vh;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   background: rgba(0, 0, 0, 0.4);
+ }
+
+ .shh {
+   height: 280px;
+   object-fit: cover;
+ }
+
+ .navbar {
+   background: linear-gradient(135deg, #6a11cb, #2575fc);
+   
+ }
+
+ .navbar .nav-link {
+   color: white;
+   font-weight: 500;
+   transition: color 0.3s ease;
+ }
+
+ .navbar .nav-link:hover {
+   color: #ffdd57;
+ }
+
+
+ /* Gallery Section */
+ #Gallery {
+   position: relative;
+ }
+
+ #Gallery h2 {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #333;
+   margin-bottom: 2rem;
+ }
+
+ /* Carousel images */
+ .gallery-img {
+   height: 500px;
+   object-fit: cover;
+   filter: brightness(85%);
+   transition: 0.5s ease, 0.5s ease;
+ }
+
+ /* 
+.carousel-item:hover .gallery-img {
+  transform: scale(1.05);
+  filter: brightness(100%);
+} */
+
+ /* Caption styling */
+ .carousel-caption {
+   background: rgba(0, 0, 0, 0.55);
+   padding: 15px 25px;
+   border-radius: 12px;
+   backdrop-filter: blur(4px);
+   animation: fadeInUp 1s ease;
+ }
+
+ .carousel-caption h5 {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: white;
+ }
+
+ .carousel-caption p {
+   font-size: 1rem;
+   color: white;
+ }
+
+ /* Indicators */
+ .carousel-indicators button {
+   background-color: white;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+ }
+
+ .carousel-indicators .active {
+   background-color: #0d6efd;
+ }
+
+ /* Fade animation */
+ .carousel-item {
+   transition: 1s ease-in-out;
+ }
+
+ /* Responsive adjustments
+@media (max-width: 768px) {
+    .gallery-img {
+        height: 300px;
+    }
+    
+    .carousel-caption {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    
+    #gallery h2 {
+        font-size: 2rem;
+    }   
+} */
+
+ .card:hover,
+ .btn:hover {
+   transform: scale(1.03);
+   transition: transform 0.3s ease-in-out;
+ }
+
+ /* Card Section */
+
+ .card {
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out;
+ }
+
+ .card h5 {
+   color: royalblue;
+ }
+
+ .card img {
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   height: 200px;
+   object-fit: cover;
+ }
+
+ .card-body {
+   padding: 20px;
+ }
+
+ .card-title {
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
+
+ .card-text {
+   font-size: 1rem;
+   color: #555;
+   margin-bottom: 15px;
+ }
+
+ .btn {
+   background-color: royalblue;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ .btn:hover {
+   background-color: #005bb5;
+ }
+
+ .card {
+   border-radius: 15px;
+   border: none;
+ }
+
+ .card-title {
+   font-weight: 600;
+   margin-bottom: 1.5rem;
+ }
+
+ .form-label {
+   font-weight: 500;
+ }
+
+ .btn-primary {
+   padding: 10px;
+   font-weight: 600;
+   border-radius: 8px;
+ }
+
+ .section-heading {
+   font-size: 1.2rem;
+   font-weight: 600;
+   margin-top: 1.5rem;
+   margin-bottom: 1rem;
+   color: #0d6efd;
+   border-bottom: 2px solid #0d6efd;
+   padding-bottom: 0.5rem;
+ }
+
+ /* Subscription Section */
+
+ .blue-theme {
+   background: linear-gradient(100deg, #6a11cb, #2575fc);
+   color: white;
+ }
+
+ .blue-theme .btn-light {
+   background-color: #ffffff;
+   color: #007bff;
+   border: none;
+ }
+
+ .blue-theme .btn-light:hover {
+   background-color: #f8f9fa;
+   color: #0056b3;
+ }
+
+ .subscription-container {
+   padding: 40px 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   transition: background 0.3s ease;
+
+ }
+
+ .subscription-container:hover {
+   background: linear-gradient(100deg, #1f65fc, #5a0ecb);
+   color: white;
+ }
+
+ .section-heading {
+   font-weight: bold;
+   color: #0d6efd;
+   margin-bottom: 10px;
+   border-bottom: 1px solid #dee2e6;
+   padding-bottom: 5px;
+ }
+
+ .price-display {
+   font-weight: bold;
+   color: #198754;
+ }
+
+ .total-price-container {
+   background-color: #f8f9fa;
+   border-radius: 5px;
+   padding: 15px;
+   margin: 20px 0;
+   border: 1px solid #dee2e6;
+ }
+
+ .form-label {
+   font-weight: 500;
+ }
+
+ .card {
+   border: none;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+ }
+
+ .card-title {
+   font-weight: 600;
+ }

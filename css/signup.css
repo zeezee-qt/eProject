@@ -1,0 +1,102 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Humanist', sans-serif;
+ }
+
+ body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background: linear-gradient(to right, royalblue, cyan);
+ }
+
+ .navbar {
+   background: linear-gradient(90deg, navy, blue);
+ }
+
+ .navbar .nav-link {
+   color: white;
+   font-weight: 500;
+   transition: color 0.3s ease;
+ }
+
+ .navbar .nav-link:hover {
+   color: #ffdd57;
+ }
+
+
+ .signup-container {
+   margin-top: 100px;
+   background: white;
+   padding: 2rem;
+   border-radius: 12px;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+   width: 100%;
+   max-width: 400px;
+   text-align: center;
+ }
+
+ .signup-container h2 {
+   margin-bottom: 1rem;
+   color: royalblue;
+ }
+
+ .signup-container p {
+   margin-bottom: 1.5rem;
+   font-size: 0.9rem;
+   color: gray;
+ }
+
+ .signup-container input {
+   width: 100%;
+   padding: 12px;
+   margin: 8px 0;
+   border: 1px solid whitesmoke;
+   border-radius: 8px;
+   outline: none;
+   transition: 0.3s;
+ }
+
+ .signup-container input:focus {
+   border-color: royalblue;
+   box-shadow: 0 0 5px rgba(0, 114, 255, 0.5);
+ }
+
+ .signup-container button {
+   width: 100%;
+   padding: 12px;
+   margin-top: 1rem;
+   background: royalblue;
+   border: none;
+   border-radius: 8px;
+   color: white;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+
+ .signup-container button:hover {
+   background: #005bb5;
+ }
+
+ .signup-container .login-link {
+   margin-top: 1rem;
+   font-size: 0.85rem;
+ }
+
+ .signup-container .login-link a {
+   color: royalblue;
+   text-decoration: none;
+   font-weight: 600;
+ }
+
+ .signup-container .login-link a:hover {
+   text-decoration: underline;
+ }
+
+ .signup-box {
+   animation: fadeIn 0.8s ease-in-out;
+ }
